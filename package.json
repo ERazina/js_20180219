@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/burlakilia/js_20180219#readme",
   "dependencies": {
-    "static-server": "^2.2.1"
+    "sass": "^1.2.0",
+    "static-server": "^2.2.1",
+    "webpack": "^2.3.2",
+    "babel-cli": "^6.24.0",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0"
   }
 }

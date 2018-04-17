@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    class Message {
+    export class Message {
 
         constructor(el, data) {
             this.el = el;
@@ -26,6 +26,6 @@
 
     }
 
-    window.Message = Message;
+
 })();
 
