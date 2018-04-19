@@ -21,9 +21,9 @@
         render() {
 
             this.el.innerHTML = `
-                            <form class="auth pure-form">
-                                    <input class="auth__name" type="text" placeholder="Login">
-                                    <input class="auth__pass" type="password" placeholder="Password">
+                            <input class="auth pure-form">
+                                    <input class="auth__name" type="text" placeholder="Login"></input>
+                               
                             
                                     <button type="submit" class=" auth__submit pure-button pure-button-primary">Sign in</button>
                             </form> `;
