@@ -10,6 +10,10 @@ export class Chat {
         this.render();
 
     }
+    insertMessage(text){
+        let parent = document.querySelector('.chat');
+        parent.appendChild(text);
+    }
 
     render() {
         this.el.innerHTML = template();

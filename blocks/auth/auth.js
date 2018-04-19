@@ -20,7 +20,6 @@ export class Auth {
 
     render() {
 
-
         this.el.innerHTML = template();
 
     }
