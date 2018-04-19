@@ -76,8 +76,15 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.Message = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _message = __webpack_require__(8);
+
+var _message2 = _interopRequireDefault(_message);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -91,10 +98,10 @@ var Message = exports.Message = function () {
     }
 
     _createClass(Message, [{
-        key: "render",
+        key: 'render',
         value: function render() {
 
-            this.el.innerHTML = "\n            <form class=\"message pure-form\">\n                <fieldset class=\"pure-group\">\n                    <input type=\"text\" class=\"message__title pure-input-1-2\" placeholder=\"Title\">\n                    <textarea class=\"message__input pure-input-1-2\" placeholder=\"Add your message here...\"></textarea>\n                </fieldset>\n                <button type=\"submit\" class=\"button__message button-success pure-button\">Publish</button>\n            </form>\n    ";
+            this.el.innerHTML = (0, _message2.default)();
         }
     }]);
 
@@ -111,8 +118,15 @@ var Message = exports.Message = function () {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.defaultLogin = exports.Auth = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _auth = __webpack_require__(7);
+
+var _auth2 = _interopRequireDefault(_auth);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -137,7 +151,7 @@ var Auth = exports.Auth = function () {
         key: 'render',
         value: function render() {
 
-            this.el.innerHTML = '\n            <form class="auth pure-form">\n                    <input class="auth__name" type="text" placeholder="Login">\n                    <input class="auth__pass" type="password" placeholder="Password">\n            \n                    <button type="submit" class=" auth__submit pure-button pure-button-primary">Sign in</button>\n            </form> ';
+            this.el.innerHTML = (0, _auth2.default)();
         }
     }]);
 
@@ -182,7 +196,6 @@ var Chat = exports.Chat = function () {
     _createClass(Chat, [{
         key: 'render',
         value: function render() {
-            console.log(2143);
             this.el.innerHTML = (0, _chat2.default)();
         }
     }]);
@@ -492,6 +505,24 @@ function pug_rethrow(err, filename, lineno, str){
 /***/ (function(module, exports) {
 
 /* (ignored) */
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var pug = __webpack_require__(5);
+
+function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cform class=\"auth pure-form\"\u003E\u003Cinput class=\"auth__name\" type=\"text\"\u003E\u003C\u002Fform\u003E";;return pug_html;};
+module.exports = template;
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var pug = __webpack_require__(5);
+
+function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"chat__message\"\u003E\u003Cdiv class=\"chat__message chat__message_name\"\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"chat__message chat__message_text\"\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+module.exports = template;
 
 /***/ })
 /******/ ]);

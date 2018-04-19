@@ -12,7 +12,6 @@ export class Chat {
     }
 
     render() {
-        console.log(2143);
         this.el.innerHTML = template();
     }
 

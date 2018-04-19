@@ -1,3 +1,5 @@
+import template from './auth.pug';
+
 export class Auth {
 
     constructor(el, data) {
@@ -19,13 +21,7 @@ export class Auth {
     render() {
 
 
-        this.el.innerHTML = `
-            <form class="auth pure-form">
-                    <input class="auth__name" type="text" placeholder="Login">
-                    <input class="auth__pass" type="password" placeholder="Password">
-            
-                    <button type="submit" class=" auth__submit pure-button pure-button-primary">Sign in</button>
-            </form> `;
+        this.el.innerHTML = template();
 
     }
 

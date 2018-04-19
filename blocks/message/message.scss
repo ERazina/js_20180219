@@ -1,12 +1,10 @@
-.button-success,
-.button-error,
-.button-warning,
-.button-secondary {
-    color: white;
-    border-radius: 4px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-}
+.chat__message{
+    width: 400px;
+    margin: auto;
+    font-size: 14px;
+    color: black;
 
-.button-success {
-    background: rgb(28, 184, 65); /* this is a green */
+    &_title{
+        font-size: 16px;
+    }
 }
