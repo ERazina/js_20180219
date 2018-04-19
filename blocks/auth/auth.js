@@ -12,7 +12,7 @@ export class Auth {
 
         form.addEventListener('submit', event => {
             event.preventDefault();
-            console.log('login');
+            console.log(defaultLogin);
         });
 
     }

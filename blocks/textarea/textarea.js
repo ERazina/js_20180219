@@ -9,6 +9,10 @@ export class Textarea {
 
     }
 
+    events(el){
+      el.addEventListener('')
+    }
+
     render() {
 
         this.el.innerHTML = template();

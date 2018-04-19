@@ -1,7 +1,6 @@
 import {Message} from '../message/message';
 import template from './chat.pug';
 
-
 export class Chat {
 
     constructor(el, data) {
@@ -18,7 +17,6 @@ export class Chat {
     render() {
         this.el.innerHTML = template();
     }
-
 
 }
 
